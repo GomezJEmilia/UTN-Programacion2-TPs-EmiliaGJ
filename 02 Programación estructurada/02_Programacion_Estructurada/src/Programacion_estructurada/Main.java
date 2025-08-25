@@ -22,7 +22,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Ejercicio 1: Año bisiesto.
-        /*System.out.println("Ejercicio 1");
+        System.out.println("Ejercicio 1");
         int anio;
         System.out.println("Ingrese un año, por favor");
         anio = Integer.parseInt(input.nextLine());
@@ -128,7 +128,7 @@ public class Main {
         cant_recibida = Integer.parseInt(input.nextLine());
         
         System.out.println("El nuevo stock del producto es: " + actualizar_stock (stock_actual, cant_vendida, cant_recibida) + "\n");
-        */
+        
         // Ejercicio 11: Calculo de descuento especial
         System.out.println("Ejercicio 11");
         double precio1;
