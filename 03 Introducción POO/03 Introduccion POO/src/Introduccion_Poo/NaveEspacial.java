@@ -37,15 +37,17 @@ public class NaveEspacial {
         if (this.combustible >= 300){
             System.out.println("En 3, 2, 1... Despegamos!!!");
         }
-    
+        
     }
     public void avanzar(int distancia){
         if (this.combustible >= distancia){
             System.out.println("Avanzamos " + distancia + " kilometros");
             this.combustible -= distancia;
-            System.out.println("Te quedan " + this.combustible + " litros de combustible disponibles");
+            System.out.println("Te quedan " + this.combustible + 
+                    " litros de combustible disponibles");
         } else {
-            System.out.println("La nave necesita recarga de combustible para avanzar. \nEl minimo son 500 litros");
+            System.out.println("La nave necesita recarga de combustible"
+                    + " para avanzar. \nEl minimo son 500 litros");
         }
     }
     
@@ -54,13 +56,15 @@ public class NaveEspacial {
             this.combustible += cantidad;
         } else {
             int cantPosible = 1500 - this.combustible;
-            System.out.println("Solo pudimos cargar " + cantPosible + " litros. Tanque lleno!");
+            System.out.println("Solo pudimos cargar " + cantPosible +
+                    " litros. Tanque lleno!");
             
             this.combustible += cantPosible;
         }
     }
     
     public void mostrarEstado(){
-        System.out.println("Nombre de la nave: " + this.nombre + "\nCombustible: " + this.combustible);
+        System.out.println("Nombre de la nave: " + this.nombre 
+                + "\nCombustible: " + this.combustible);
     }
 }

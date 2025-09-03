@@ -48,7 +48,8 @@ public class Mascota {
     }
     
     public void mostrarInfo(){
-        System.out.println("\nNombre :" + this.nombre + "\nEspecie: " + this.especie + "\nEdad: " + this.edad);
+        System.out.println("\nNombre :" + this.nombre + "\nEspecie: " 
+                + this.especie + "\nEdad: " + this.edad);
     }
     
     public void cumplirAnos(){

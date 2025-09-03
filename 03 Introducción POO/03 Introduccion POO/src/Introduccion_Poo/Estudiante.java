@@ -15,7 +15,8 @@ public class Estudiante {
     private String curso;
     private double calificacion;
 
-    public Estudiante(String nombre, String apellido, String curso, double calificacion) {
+    public Estudiante(String nombre, String apellido, 
+            String curso, double calificacion) {
 
         this.nombre = nombre;
         this.apellido = apellido;
@@ -76,12 +77,14 @@ public class Estudiante {
             calificacion = calificacion - puntos;
             
         } else {
-            System.out.println("El estudiante ya tiene la calificación mínima (1)");
+            System.out.println("El estudiante ya tiene la calificación "
+                    + " mínima (1)");
         }
     }
 
     public void mostrarInfo() {
-        System.out.println("Nombre :" + this.nombre + "\nApellido: " + this.apellido + "\nCurso: " + this.curso + "\nCalificación: " + this.calificacion);
+        System.out.println("Nombre :" + this.nombre + 
+            "\nApellido: " + this.apellido + "\nCurso: " + this.curso + "\nCalificación: " + this.calificacion);
     }
 
 }
